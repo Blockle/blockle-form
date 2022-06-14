@@ -1,9 +1,10 @@
-import React, { FC, SyntheticEvent } from 'react';
+import React, { FC, ReactNode, SyntheticEvent } from 'react';
 import { FormContext } from '../FormContext/FormContext';
 import { setFormSubmitting, setFormTouched } from '../store/actions';
 import { UseForm } from '../useForm/useForm';
 
 interface Props {
+  children: ReactNode;
   form: UseForm<any>;
   autoComplete?: string;
   className?: string;
